@@ -280,11 +280,15 @@ a:active,a:focus,a:hover {
 
 
 
-@media only screen and (min-width : 50px) and (max-width : 380px)  {
+@media only screen and (max-width : 380px)  {
     
     .list-inline-item{
         font-size: 14px;
 
+    }
+
+    .container{
+        background-color: #bd5d38;
     }
     }
     
