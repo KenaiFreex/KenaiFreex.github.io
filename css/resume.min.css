@@ -229,7 +229,7 @@ a:hover {
 
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
+@media (min-width : 321px) {
     .container {
         width: 100vh;
         background-color: #bd5d38;
@@ -247,9 +247,14 @@ a:hover {
         
     }
 
+    .list-inline-item{
+        font-size: 24px;
+
+    }
+
 }
 
-@media only screen and (min-width : 990px) {
+@media (min-width : 990px) {
     .container {
         width: 100vh;
         background-color: white;
@@ -266,6 +271,10 @@ a:hover {
         min-height: 100vh;
         top: 0;
         
+    }
+    .list-inline-item{
+        font-size: 34px;
+
     }
 }
 
