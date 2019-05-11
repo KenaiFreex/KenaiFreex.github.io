@@ -220,16 +220,14 @@ a {
     color: #bd5d38
 }
 
-a:active,
-a:focus,
-a:hover {
+a:active,a:focus,a:hover {
     color: #824027
 }
 
 
 
 /* Smartphones (landscape) ----------- */
-@media (min-width : 100px) {
+@media (min-width : 321px) {
     .container {
         width: 100vh;
         background-color: #bd5d38;
@@ -253,6 +251,8 @@ a:hover {
     }
 
 }
+
+
 
 @media (min-width : 990px) {
     .container {
@@ -278,6 +278,17 @@ a:hover {
     }
 }
 
+
+
+@media only screen and (min-width : 50px) and (max-width : 380px)  {
+    
+    .list-inline-item{
+        font-size: 14px;
+
+    }
+    }
+    
+
 .acerca {
     min-height: 100vh;
     top: 0;
@@ -288,3 +299,4 @@ a:hover {
    top:0; 
 
 }
+
