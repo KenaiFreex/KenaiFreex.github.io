@@ -205,7 +205,8 @@ section .resume-section .resume-item .resume-date {
 
 
 .bg-primary {
-    background-color: #bd5d38 !important
+    background: rgb(189,93,56);
+    background: linear-gradient(90deg, rgba(189,93,56,1) 35%, rgba(95,117,154,1) 100%);
 }
 
 .text-primary {
@@ -233,13 +234,17 @@ a:active,a:focus,a:hover {
     }
     .container {
         width: 100vh;
-        background-color: #bd5d38;
+        background: rgb(189,93,56);
+        background: linear-gradient(90deg, rgba(189,93,56,1) 35%, rgba(95,117,154,1) 100%);
         min-width: 100%;
         max-width: 100%;
         top: 0;
         bottom: 0;
         margin-bottom: 0;
         margin-top: 0;
+        overflow:auto;
+        margin-top: -2px;
+
 
     }
 }
@@ -248,13 +253,17 @@ a:active,a:focus,a:hover {
 
     .container {
         width: 100vh;
-        background-color: #bd5d38;
+        background: rgb(189,93,56);
+        background: linear-gradient(90deg, rgba(189,93,56,1) 35%, rgba(95,117,154,1) 100%);
         min-width: 100%;
         max-width: 100%;
         top: 0;
         bottom: 0;
         margin-bottom: 0;
         margin-top: 0;
+        overflow:auto;
+        margin-top: -4px;
+
 
     }
     .acerca {
