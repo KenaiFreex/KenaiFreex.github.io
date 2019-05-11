@@ -33,3 +33,23 @@ p {
     font-size: 14px; 
     color: gray;
 }
+
+.container-img{
+
+    height: 10%;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+.container-fluid{
+
+    top: 0;
+    padding-top: 0%
+
+}
