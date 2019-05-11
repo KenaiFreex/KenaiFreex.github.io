@@ -1,0 +1,41 @@
+p {
+    text-align: justify;
+}
+
+.list-inline-item {
+
+    padding-right: 10px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5% 1fr 5% 1fr ;
+    
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.vertical-line{
+
+    border-left:1px solid gainsboro;
+    height:100%;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto 2fr ;
+    padding: 5px;
+}
+.w3-container{
+
+    height:24px;
+    width:60% ;
+    font-size: 14px; 
+    color: gray;
+}
