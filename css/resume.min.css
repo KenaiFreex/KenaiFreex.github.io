@@ -229,7 +229,7 @@ a:hover {
 
 
 /* Smartphones (landscape) ----------- */
-@media (min-width : 321px) {
+@media (min-width : 100px) {
     .container {
         width: 100vh;
         background-color: #bd5d38;
