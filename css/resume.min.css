@@ -234,8 +234,9 @@ a:active,a:focus,a:hover {
     }
     .container {
         width: 100vh;
-        background: rgb(189,93,56);
-        background: linear-gradient(90deg, rgba(189,93,56,1) 35%, rgba(95,117,154,1) 100%);
+        background: #FF8008;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         min-width: 100%;
         max-width: 100%;
         top: 0;
@@ -253,8 +254,9 @@ a:active,a:focus,a:hover {
 
     .container {
         width: 100vh;
-        background: rgb(189,93,56);
-        background: linear-gradient(90deg, rgba(189,93,56,1) 35%, rgba(95,117,154,1) 100%);
+        background: #FF8008;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         min-width: 100%;
         max-width: 100%;
         top: 0;
