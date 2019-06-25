@@ -236,9 +236,10 @@ a:active,a:focus,a:hover {
     }
     .container {
         width: 100vh;
-        background: #FF8008;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: rgb(93, 130, 250);  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, rgb(93, 130, 250), #3d78b3);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, rgb(93, 130, 250), #3d78b3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
         min-width: 100%;
         max-width: 100%;
         top: 0;
@@ -256,10 +257,10 @@ a:active,a:focus,a:hover {
 
     .container {
         width: 100vh;
-        background: #FF8008;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        min-width: 100%;
+        background: rgb(93, 130, 250);  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, rgb(93, 130, 250), #3d78b3);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, rgb(93, 130, 250), #3d78b3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                min-width: 100%;
         max-width: 100%;
         top: 0;
         bottom: 0;
