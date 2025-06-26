@@ -28,50 +28,5 @@
       </div>
     </div>
   </div>
-
-  <script>
-    const seconds = document.getElementById("seconds");
-    const minutes = document.getElementById("minutes");
-    const hours = document.getElementById("hours");
-    const days = document.getElementById("days");
-
-    const today = new Date();
-
-    // Definir fecha objetivo: 11 de agosto de este año
-    let targetDate = new Date(today.getFullYear(), 7, 11); // Agosto = 7 (0-indexado)
-    targetDate.setHours(0, 0, 0, 0);
-
-    // Si ya pasó este año, usar el siguiente
-    if (today > targetDate) {
-      targetDate.setFullYear(targetDate.getFullYear() + 1);
-    }
-
-    let totalSeconds = Math.floor((targetDate - today) / 1000);
-
-    const setDisplay = (sec) => {
-      days.innerText = String(Math.floor(sec / (24 * 60 * 60))).padStart(2, "0");
-      sec %= 24 * 60 * 60;
-      hours.innerText = String(Math.floor(sec / (60 * 60))).padStart(2, "0");
-      sec %= 60 * 60;
-      minutes.innerText = String(Math.floor(sec / 60)).padStart(2, "0");
-      sec %= 60;
-      seconds.innerText = String(Math.floor(sec)).padStart(2, "0");
-    };
-
-    const timer = setInterval(() => {
-      if (totalSeconds <= 0) {
-        totalSeconds = 0;
-        clearInterval(timer);
-        // Redireccionar al llegar la fecha
-        window.location.href = "index2.html";
-        return;
-      }
-      totalSeconds -= 1;
-      setDisplay(totalSeconds);
-    }, 1000);
-
-    // Mostrar desde el inicio
-    setDisplay(totalSeconds);
-  </script>
 </body>
 </html>
