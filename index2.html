@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>¡¡¡🥳 Feliz cumpleaños 🥳!!!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row p-4">
+            <div class="loader">
+                <button id="play" class="p-4">👀</button>
+            </div>
+        </div>
+    </div>
+ 
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
+                </div>
+
+                <div class="col-12  text-center p-2">
+                    <div id="name" class="area">Ballenita  uwu  </div>
+                </div>
+
+                <div class="col-12 text-center mb-4">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>Feliz cumpleaños <i id="nae">Ballenita  ❤️</i></h2>
+                            <h2>Te mereces todo lo <br>bueno del mundo ❤️</h2>
+                            <h2>Cuando veas ésto <br> escribeme "Pollo con papas en whatsapp" uwu</h2>
+
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/l5LTjJ5Fs3Y?si=5pbwWmIVpv2RxpPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  
+            </div>
+        </div>
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border">
+    </div>
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var playButton = document.getElementById('play');
+      var video = document.getElementById('video');
+    
+      playButton.addEventListener('click', function() {
+        video.src += '&autoplay=1'; // Añade el autoplay al URL del video
+        playButton.style.display = 'none'; // Oculta el botón después de hacer clic
+      });
+    });
+    </script>
+
+</html>
