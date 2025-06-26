@@ -53,6 +53,8 @@ body {
 .title {
     font-size: xx-large;
     margin-bottom: 20px;
+    align-content: center;
+    text-align: center;
 }
 
 @media (max-width: 500px) {
