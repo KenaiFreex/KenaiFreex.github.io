@@ -1,25 +1,77 @@
-<link rel="stylesheet" href="css/jenni.css">
-
-<div class="container">
-  <div class="title">Cumpleaños de mi Ballenita ❤️:</div>
-  <div class="clock">
-    <div class="days">
-      <span id="days">00</span>
-      <p>DAYS</p>
-    </div>
-    <div class="hours">
-      <span id="hours">00</span>
-      <p>HOURS</p>
-    </div>
-    <div class="minutes">
-      <span id="minutes">00</span>
-      <p>MINS</p>
-    </div>
-    <div class="seconds">
-      <span id="seconds">00</span>
-      <p>SECS</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cumpleaños de mi Ballenita ❤️</title>
+  <link rel="stylesheet" href="css/jenni.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="title">Cumpleaños de mi Ballenita ❤️:</div>
+    <div class="clock">
+      <div class="days">
+        <span id="days">00</span>
+        <p>DÍAS</p>
+      </div>
+      <div class="hours">
+        <span id="hours">00</span>
+        <p>HORAS</p>
+      </div>
+      <div class="minutes">
+        <span id="minutes">00</span>
+        <p>MINUTOS</p>
+      </div>
+      <div class="seconds">
+        <span id="seconds">00</span>
+        <p>SEGUNDOS</p>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="js/jenni.js"></script>
+  <script>
+    const seconds = document.getElementById("seconds");
+    const minutes = document.getElementById("minutes");
+    const hours = document.getElementById("hours");
+    const days = document.getElementById("days");
+
+    const today = new Date();
+
+    // Definir fecha objetivo: 11 de agosto de este año
+    let targetDate = new Date(today.getFullYear(), 7, 11); // Agosto = 7 (0-indexado)
+    targetDate.setHours(0, 0, 0, 0);
+
+    // Si ya pasó este año, usar el siguiente
+    if (today > targetDate) {
+      targetDate.setFullYear(targetDate.getFullYear() + 1);
+    }
+
+    let totalSeconds = Math.floor((targetDate - today) / 1000);
+
+    const setDisplay = (sec) => {
+      days.innerText = String(Math.floor(sec / (24 * 60 * 60))).padStart(2, "0");
+      sec %= 24 * 60 * 60;
+      hours.innerText = String(Math.floor(sec / (60 * 60))).padStart(2, "0");
+      sec %= 60 * 60;
+      minutes.innerText = String(Math.floor(sec / 60)).padStart(2, "0");
+      sec %= 60;
+      seconds.innerText = String(Math.floor(sec)).padStart(2, "0");
+    };
+
+    const timer = setInterval(() => {
+      if (totalSeconds <= 0) {
+        totalSeconds = 0;
+        clearInterval(timer);
+        // Redireccionar al llegar la fecha
+        window.location.href = "index2.html";
+        return;
+      }
+      totalSeconds -= 1;
+      setDisplay(totalSeconds);
+    }, 1000);
+
+    // Mostrar desde el inicio
+    setDisplay(totalSeconds);
+  </script>
+</body>
+</html>
